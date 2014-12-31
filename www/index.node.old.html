@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head>
+        <script type="text/javascript" src='//code.jquery.com/jquery-1.7.2.min.js'></script>
+
+        <script type="text/javascript" src="/lib/socket.io/socket.io.js"> </script>
+
+	<script>
+
+		var socket = io.connect('http://bomberman.tank:3000');
+
+		socket.on('kubaevent', function (data) {
+			
+			$('#messages').append( "aaa" + mydump(data) );
+			console.log(data);
+			//socket.emit('my other event', { my: 'data' });
+		});
+
+
+		$(document).ready(function(){
+
+			$('#kuba').click(function(){
+
+				socket.emit('kubaevent', { test: 'kuba' });
+
+			});
+
+		});
+		
+		function mydump(arr,level) {
+			var dumped_text = "";
+			if(!level) level = 0;
+
+			var level_padding = "";
+			for(var j=0;j<level+1;j++) level_padding += "    ";
+
+			if(typeof(arr) == 'object') {
+			    for(var item in arr) {
+				var value = arr[item];
+
+				if(typeof(value) == 'object') {
+				    dumped_text += level_padding + "'" + item + "' ...\n";
+				    dumped_text += mydump(value,level+1);
+				} else {
+				    dumped_text += level_padding + "'" + item + "' => \"" + value + "\"\n";
+				}
+			    }
+			} else {
+			    dumped_text = "===>"+arr+"<===("+typeof(arr)+")";
+			}
+			return dumped_text;
+		    }
+	  </script>
+    </head>
+    <body>
+        <div id='messages'></div>
+
+	<div id="kuba" style="background:#f0f;">Click</div>
+    </body>
+</html>

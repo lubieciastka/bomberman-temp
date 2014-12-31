@@ -1,0 +1,174 @@
+html,body {
+	
+	background-color: #333;
+	color: #fff;
+	font-family: helvetica, arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 12pt;
+
+	background:url(/inc.img/ocean.jpg) top left repeat;
+}
+
+.clear { clear:both; }
+
+#gameCanvas {
+
+	height:0;
+	width:100%;
+	height:768px;
+	background: url(/media/podloga.png) top left repeat;
+}
+
+#wrapper {
+
+	width:1024px;
+	margin:0 auto;
+}
+
+#wrapper-top{
+
+	border-bottom: 1px solid #fff;
+	height:30px;
+	margin:20px 0;
+
+}
+
+	#wrapper-top .round{
+
+		float:right;
+	}
+
+	#wrapper-top .time{
+
+		float:left;
+
+	}
+
+#wrapper-players{
+
+	width:100%;
+
+}
+
+	#wrapper-players ul{
+
+		list-style:none;
+		float:left;
+		width:100%;
+		padding:0;
+
+		margin:0;
+	}
+
+		#wrapper-players ul li{
+
+			float:left;
+			
+			font-size:13px;
+		}
+
+			#wrapper-players ul li.player{
+
+				border-right:1px dotted #fff;
+
+				padding: 5px;
+				width: 70px;
+
+				display:none;
+			}
+
+
+				#wrapper-players ul li.player .player-color{
+
+					width:100%;
+					height:5px;
+				}
+
+				#wrapper-players ul li.player .player-powerups{
+
+					float:left;
+
+					margin:10px 0;
+				}
+
+					#wrapper-players ul li.player .player-powerups ul{
+
+						list-style:none;
+					}
+
+						#wrapper-players ul li.player .player-powerups ul li{
+
+							width:100%;
+							float:left;
+							margin-bottom:5px;
+						}
+				
+								#wrapper-players ul li.player .player-powerups ul li .power-info{
+
+									width: 5px;
+									height: 13px;
+									background: #fff;
+									margin-left: 2px;
+									float: left;
+									margin-top: 1px;
+								}
+
+						#wrapper-players ul li.player .player-powerups ul li.lifes{
+
+						}
+
+							#wrapper-players ul li.player .player-powerups ul li.lifes .life{
+
+								background:url(/inc.img/heart.png) top left no-repeat;
+
+								width:15px;
+								float:left;
+								
+								background-size: 100%;
+								height: 15px;
+							}
+
+						#wrapper-players ul li.player .player-powerups ul li.bombs{
+
+						}
+
+							#wrapper-players ul li.player .player-powerups ul li.bombs .bomb{
+
+								background:url(/inc.img/bomb.png) top left no-repeat;
+								
+								width:15px;
+								float:left;
+
+								background-size: 100%;
+								height: 15px;
+							}
+
+					#wrapper-players ul li.player .player-powerups ul{
+
+						float:left;
+						list-style:none;
+					}
+
+				#wrapper-players ul li.player .player-name{
+
+					-webkit-border-radius: 50%;
+					-moz-border-radius: 50%;
+					border-radius: 50%;
+
+					width:50px;
+					height:50px;
+
+					color:#333;
+
+					background:#fff;
+
+					text-align: center;
+					line-height: 51px;
+
+					font-size:40px;
+
+					margin:10px;
+
+					float:left;
+				}

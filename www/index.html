@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Zombies, I see Zombies :-)</title>
+
+		<link rel="stylesheet" media="screen,print" href="inc.css/reset.css">
+		<link rel="stylesheet" media="screen,print" href="inc.css/main.css">
+
+		<script type="text/javascript" src="lib/other/jquery-2.0.3.min.js"></script>
+		<script type="text/javascript" src="/lib/socket.io/socket.io.js"> </script>
+
+		<script type="text/javascript" src="lib/impact/impact.js"></script>
+		<script type="text/javascript" src="lib/game/main.js"></script>
+
+	</head>
+	
+	<body>
+
+		<div id="wrapper">
+
+			<div id="wrapper-top">
+
+				<div class="time">
+					<img src="/inc.img/clock.png" alt="Clock icon" style="width:18px;"/>
+					09:41
+				</div>
+
+				<div class="round">Round: 10</div>
+				
+			</div>
+
+			<div id="wrapper-game">
+
+				<canvas id="gameCanvas"></canvas>
+
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="wrapper-players">
+
+				<ul id="players-list">
+
+					<li class="player player-1">
+
+						<div class="player-color" style="background:#ffffff"></div>
+
+						<div class="clear"></div>
+
+						<div class="player-name">
+							1
+						</div>
+
+						<div class="clear"></div>
+
+						<div class="player-powerups">
+
+							<ul>
+
+								<li class="lifes">
+
+								</li>
+
+								<li class="bombs">
+
+								</li>
+
+							</ul>
+
+						</div>
+
+					</li>
+
+					<li class="player player-2">
+
+						<div class="player-color" style="background:#009300"></div>
+
+						<div class="clear"></div>
+
+						<div class="player-name">
+							2
+						</div>
+
+						<div class="clear"></div>
+
+						<div class="player-powerups">
+
+							<ul>
+
+								<li class="lifes">
+
+								</li>
+
+								<li class="bombs">
+
+								</li>
+
+							</ul>
+
+						</div>
+
+					</li>
+
+					<li class="player player-3">
+
+						<div class="player-color" style="background:#d40000"></div>
+
+						<div class="clear"></div>
+
+						<div class="player-name">
+							3
+						</div>
+
+						<div class="clear"></div>
+
+						<div class="player-powerups">
+
+							<ul>
+
+								<li class="lifes">
+
+								</li>
+
+								<li class="bombs">
+
+								</li>
+								
+							</ul>
+
+						</div>
+
+					</li>
+
+					<li class="player player-4">
+
+						<div class="player-color" style="background:#003df3"></div>
+
+						<div class="clear"></div>
+
+						<div class="player-name">
+							4
+						</div>
+
+						<div class="clear"></div>
+
+						<div class="player-powerups">
+
+							<ul>
+
+								<li class="lifes">
+
+								</li>
+
+								<li class="bombs">
+
+								</li>
+
+							</ul>
+
+						</div>
+
+					</li>
+
+					<li class="player player-5">
+
+						<div class="player-color" style="background:#f3ea5e"></div>
+
+						<div class="clear"></div>
+
+						<div class="player-name">
+							5
+						</div>
+
+						<div class="clear"></div>
+
+						<div class="player-powerups">
+
+							<ul>
+
+								<li class="lifes">
+
+								</li>
+
+								<li class="bombs">
+
+								</li>
+
+							</ul>
+
+						</div>
+
+					</li>
+
+				</ul>
+
+				<div class="clear"></div>
+
+			</div>
+
+		</div>
+
+		
+		
+	</body>
+
+</html>
